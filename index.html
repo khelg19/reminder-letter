@@ -134,8 +134,8 @@ p{
 
 <div class="container">
 
-<button onclick="openLetter()">
-🌸 Read This Whenever Life Feels Heavy
+<button id="openBtn" onclick="openLetter()">
+    🌸 Read This Whenever Life Feels Heavy
 </button>
 
 <div class="letter" id="letter">
@@ -224,6 +224,8 @@ and be proud that you never gave up.
 </div>
 <script>
 function openLetter() {
+
+    document.getElementById("openBtn").style.display = "none";
 
     document.getElementById("letter").style.display = "block";
 
