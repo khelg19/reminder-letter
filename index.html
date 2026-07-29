@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>A Letter For You</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    background: linear-gradient(160deg,#fde2ff,#edd6ff,#d8e7ff);
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    overflow-x:hidden;
+    padding:40px;
+    position:relative;
+}
+
+.container{
+    text-align:center;
+}
+
+button{
+    padding:18px 42px;
+    border:none;
+    border-radius:50px;
+    background:linear-gradient(135deg,#d16ba5,#8e7dff);
+    color:#fff;
+    font-size:18px;
+    cursor:pointer;
+    transition:.4s;
+    font-weight:600;
+    letter-spacing:.5px;
+    box-shadow:0 15px 35px rgba(143,92,255,.25);
+}
+
+button:hover{
+    transform:translateY(-5px);
+    box-shadow:0 20px 45px rgba(143,92,255,.35);
+}
+
+.letter{
+    display:none;
+    background:white;
+    max-width:850px;
+    padding:55px;
+    border-radius:25px;
+    border:3px solid #edd9ff;
+    box-shadow:0 30px 60px rgba(103,81,181,.18);
+    position:relative;
+    animation:fadeIn 1s ease;
+    text-align:left;
+    line-height:2;
+}
+.letter::before{
+content:"🌸";
+position:absolute;
+top:-22px;
+left:50%;
+transform:translateX(-50%);
+font-size:34px;
+background:white;
+padding:8px;
+border-radius:50%;
+}
+
+h1{
+    color:#8c62d8;
+    text-align:center;
+    margin-bottom:15px;
+    font-size:34px;
+}
+
+p{
+    color:#555;
+    font-size:17px;
+    margin-bottom:20px;
+}
+
+.signature{
+    text-align:center;
+    margin-top:40px;
+    font-size:22px;
+    color:#ff5b8a;
+    font-weight:600;
+    line-height:2;
+    width:100%;
+}
+@keyframes fadeIn{
+    from{
+        opacity:0;
+        transform:translateY(30px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+@media(max-width:768px){
+    .letter{
+        padding:25px;
+    }
+
+    p{
+        font-size:15px;
+    }
+
+    button{
+        width:100%;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<button onclick="openLetter()">
+🌸 Read This Whenever Life Feels Heavy
+</button>
+
+<div class="letter" id="letter">
+
+<h1>A Little Reminder For You</h1>
+
+<p style="text-align:center;color:#8c79c9;font-style:italic;margin-bottom:35px;">
+Whenever life feels a little heavier than usual,
+come back and read this.
+</p>
+
+<p>
+I just want to remind you of something.
+</p>
+
+<p>
+Alam ko minsan ang hirap ng buhay. May mga araw na sobrang pagod ka na, may mga pagkakataon na parang gusto mo na lang sumuko kasi feeling mo ang dami mong dala. Pero sana huwag mong kalimutan na lahat ng ginagawa mo ngayon has a purpose.
+</p>
+
+<p>
+Every late night, every exam, every struggle, every sacrifice, hindi yan masasayang. One day, you'll realize that all those moments were building the future you've always prayed for. Hindi man mabilis ang progress, ang importante is hindi ka tumitigil.
+</p>
+
+<p>
+Please don't be too hard on yourself. Hindi mo kailangang maging perfect. You just have to keep showing up, keep learning, and keep believing that better days are coming. Trust the process. Your future self will thank you for not giving up today.
+</p>
+
+<p>
+Kapag feeling mo napag iiwanan ka, remember that life is not a race. Everyone has their own journey and their own timing. Don't compare yourself to others. Focus on becoming a better version of yourself every single day.
+</p>
+
+<p>
+And please, always believe in yourself. Because even on the days na hindi mo kayang maniwala sa sarili mo, I hope you remember that someone out there believes in you. Isa na ako doon.
+</p>
+
+<p>
+Kung dumating yung point na sobrang bigat na ng lahat, don't keep everything to yourself. Hindi mo kailangang dalhin lahat mag isa. If you ever need someone to listen, someone to understand you, or someone who will simply stay with you kahit tahimik lang, I'm here. Meron kang ako. I may not have all the answers, but I'll always make time to listen.
+</p>
+
+<p>
+Okay lang mapagod. Okay lang umiyak. Okay lang magpahinga. But please, don't give up on your dreams. Imagine the day na makukuha mo na yung diploma mo, magiging successful ka sa career mo, at masasabi mong <b>"Kinaya ko."</b> That day will come, and when it does, all the struggles you're facing today will be worth it.
+</p>
+
+<p>
+Take care of yourself too. Don't forget to eat, get enough rest, and always choose yourself when things become too overwhelming. You matter more than you think.
+</p>
+
+<p>
+Always remember this. Storms don't last forever. No matter how difficult life gets, the sun will always rise again. And when that day comes, you'll be glad that you chose to keep going.
+</p>
+
+<p>
+So keep your head up. Keep fighting. Keep believing. Your dreams are waiting for you, and I know you'll get there.
+</p>
+
+<p style="text-align:center;font-size:22px;color:#ff5b8a;font-weight:bold;">
+And whenever life feels too heavy, just remember...
+</p>
+
+<p style="text-align:center;font-size:32px;font-weight:bold;color:#ff4d88;">
+Meron kang ako.
+</p>
+
+
+<div class="signature">
+
+🌸
+
+Always cheering for you.
+
+Keep believing.
+
+Keep going.
+
+One day you'll look back
+and be proud that you never gave up.
+
+</div>
+<p style="text-align:center;font-size:32px;font-weight:bold;color:#ff4d88;">
+-khelgg
+</p>
+</div>
+
+
+
+</div>
+<script>
+function openLetter(){
+    document.getElementById("letter").style.display="block";
+    window.scrollTo({
+        top:document.body.scrollHeight,
+        behavior:"smooth"
+    });
+}
+</script>
+
+</body>
+</html>
