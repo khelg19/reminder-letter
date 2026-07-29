@@ -225,6 +225,10 @@ and be proud that you never gave up.
 <script>
 function openLetter() {
 
+    document.querySelector(".container").style.display = "flex";
+    document.querySelector(".container").style.flexDirection = "column";
+    document.querySelector(".container").style.alignItems = "center";
+
     document.getElementById("openBtn").style.display = "none";
 
     document.getElementById("letter").style.display = "block";
